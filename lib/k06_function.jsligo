@@ -20,8 +20,14 @@
   max(1,2) returns 2
 */
 
-const max = (a:int,b:int): int =>
-  K.todo("Should return the function computing the max of two integers");
+const max = (a:int,b:int): int => {
+  if(a > b) {
+    return a;
+  }
+  else {
+    return b;
+  };
+};
 
 /*
   Write a function waiting for a string which returns a function
@@ -31,7 +37,7 @@ const max = (a:int,b:int): int =>
 */    
 
 export const concat = (a:string) : ((b:string) => string) => {
-    K.todo("Should provide a function performing a concatenation");
+  return (b:string): string => (a + b);
 };
 
 /*
@@ -39,7 +45,7 @@ export const concat = (a:string) : ((b:string) => string) => {
 */
 
 export const handle = (f:((b:string) => string), a:string) : string => {
-    K.todo("Should return the application of `f` on `a`");
+    return f(a);
 };
 
 /* -------------------------------------------------------------------------
