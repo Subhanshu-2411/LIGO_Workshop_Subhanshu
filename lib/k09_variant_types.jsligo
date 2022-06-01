@@ -24,10 +24,10 @@ export type coin =
     | ["Heads"] | ["Tails"];
 
 export const new_heads = (): coin => 
-    K.todo("Should return a heads data");
+    Heads();
 
 export const new_tails = (): coin => 
-    K.todo("Should return a tails data");
+    Tails();
 
 /*
     Pattern matching is similar to the switch construct in JavaScript, and can be used 
@@ -63,7 +63,10 @@ export const is_paper = (p:play): bool => {
 */
 
 export const flip_coin = (c:coin): coin => {
-    K.todo("Should return a flipped coin. Heads should be transformed to Tails and Tails should be transformed to Heads.");
+    match(c, {
+        Heads: () => new_tails(),
+        Tails: () => new_heads(),
+    });
 };    
 
 /*
@@ -108,7 +111,15 @@ type flip = ((u:unit) => coin);
 export type turn = | ["Play", flip] | ["Reset"];
 
 export const play = (t:turn,g:game): game => {
-    K.todo("Should return a new game reflecting the turn played.");
+    match(t, {
+        Play: f => {
+            match(f(), {
+                Heads: () => ({...g, heads: g.heads + (1 as nat)}),
+                Tails: () => ({...g, tails: g.tails + (1 as nat)}),
+            });
+        },
+        Reset: () => ({heads: 0 as nat, tails: 0 as nat})
+    });
 };
 
 /*
