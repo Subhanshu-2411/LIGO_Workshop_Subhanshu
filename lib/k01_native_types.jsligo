@@ -10,19 +10,19 @@
 */
 
 export const hello = () : string =>     
-    K.todo("Should return \"Hello\"");
+    "Hello";
 
 export const one = () : int => 
-    K.todo("Should return 1");
+    1;
 
 export const one_nat = () : nat => 
-    K.todo("Should return 1 nat");
+    1 as nat;
 
 export const one_tez = () : tez => 
-    K.todo("Should return 1 tez");
+    1 as tez;
 
 export const true_value = () : bool => 
-    K.todo("Should return true");
+    true;
 
 /* 
     Reference: https://ligolang.org/docs/language-basics/math-numbers-tez
