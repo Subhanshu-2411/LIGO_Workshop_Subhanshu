@@ -11,7 +11,7 @@ type account_data = {
 };
 
 export let account = () : account_data => {
-  K.todo("Should return an account data with a balance of 5 tez and 3 transactions");
+  ({balance: 5 as tez, transactions: 3 as nat});
 };
 
 /*
@@ -31,7 +31,7 @@ const balance : tez = (account()).balance;
 */
 
 export let modify_account = (account: account_data) : account_data => {
-  K.todo("Should return an account data with 5 transactions");
+  ({...account, transactions: 5 as nat});
 }
 
 /*
