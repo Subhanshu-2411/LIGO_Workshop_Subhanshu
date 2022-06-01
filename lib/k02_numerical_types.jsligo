@@ -19,16 +19,16 @@
 */
 
 export const add_int = (n1:int,n2:int) : int =>
-    K.todo("Should add two integers");
+    n1 + n2;
 
 export const add_int_and_nat = (n1:int,n2:nat) : int =>
-    K.todo("Should add an integer and a natural");
+    n1 + n2;
 
 export const add_nat = (n1:nat,n2:nat) : nat =>
-    K.todo("Should add two naturals");
+    n1 + n2;
 
 export const add_tez = (n1:tez,n2:tez) : tez =>
-    K.todo("Should add two tez values");
+    n1 + n2;
 
 /*
     Subtractions follow the same principles. 
@@ -36,26 +36,26 @@ export const add_tez = (n1:tez,n2:tez) : tez =>
 */
 
 export const substract_int = (n1:int,n2:int) : int =>
-    K.todo("Should substract two integers");
+    n1 - n2;
 
 export const substract_int_and_nat = (n1:int,n2:nat) : int =>
-    K.todo("Should substract and integer and a nat");
+    n1 - n2;
 
 export const substract_nat = (n1:nat,n2:nat) : int =>
-    K.todo("Should substract two naturals");
+    n1 - n2;
 
 export const substract_tez = (n1:tez,n2:tez) : tez =>
-    K.todo("Should substract two tez values");
+    n1 - n2;
 
 /*
     Numerical conversion can be done from int to nat and vice versa
 */
 
 export const int_from_nat = (n1:nat) : int =>
-    K.todo("Should cast a nat to an int");
+    int(n1 as nat);
 
 export const nat_from_int = (n1:int) : nat =>
-    K.todo("Should cast an int to a nat");
+    abs(n1);
 
 /*
     Reference: https://ligolang.org/docs/language-basics/math-numbers-tez
