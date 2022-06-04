@@ -10,7 +10,7 @@ description: Set of koans dedicated to JsLIGO syntax
 
 ## Remote execution
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Subhanshu-2411/LIGO_Workshop_Subhanshu)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Subhanshu-2411/LIGO_Workshop_Subhanshu_1)
 
 ## Local execution
 
